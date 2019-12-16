@@ -2,3 +2,8 @@ This project file must include mdp.py
 numpy, copy, and matplotlib are used as additional library
 All three parts are included in connectThree.py, which contains: gameplay part, tree search part and learning part
 connectThree.py can compile directly with mdp.py
+Works Cited:
+mdp.py from in class material, CIS667, Garret Katz
+DFS function from in class material, CIS667, Garret Katz
+Minimax Tree Pseudocode from in class material, CIS667, Garret Katz
+Helper Function to find all connected nodes, https://www.cnblogs.com/mq0036/p/7831616.html
