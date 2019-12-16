@@ -6,6 +6,12 @@ import matplotlib.pyplot as pt
 BLANK = 0
 WHITE = 1
 BLACK = -1
+###################################################
+#   Zihao Liu, 12,16,2019                         #
+#   mdp on connect four                           #
+#   mdp.py from in-class material, Garret Katz    #
+###################################################
+
 
 ###################################################
 # Helper Function                                 #
@@ -168,6 +174,7 @@ def move(state, col_index, player):
 def DFS(state, player):
     """
     only used to compare performance
+    From inclass materials of CIS667, Garret Katz
     """
     if score(state) in [-1, 1]: return 1
 
@@ -190,6 +197,7 @@ def mnx_ab(state, player, depth=0, alpha=-np.inf, beta=np.inf):
     """
     using alpha-beta pruning minimax tree to reduce the number of states
     and also keep a index-state dictionary to help create P table
+    Pseufo code from inclass materials of CIS667, Garret Katz
     """
     global count   
     global state_dict
